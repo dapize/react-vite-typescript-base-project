@@ -27,8 +27,8 @@
       "@helpers/*":["helpers/*"],
       "@utils":["utils"],
       "@utils/*":["utils/*"],
-      "@contexts":["contexts"],
-      "@contexts/*":["contexts/*"],
+      "@services":["services"],
+      "@services/*":["services/*"]
     }
   },
   "include": ["src"],
