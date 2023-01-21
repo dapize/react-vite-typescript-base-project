@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import { Button as ButtonMu } from '@mui/material';
 import { IButton } from './Button.d';
 
-export const Button: FC<IButton> = ({ children, onClick }) => {
+const Button: FC<IButton> = ({ children, onClick }) => {
   return (
     <Box justifyContent="center" alignItems="center" display="flex">
       <ButtonMu variant="contained" onClick={onClick}>
@@ -12,3 +12,5 @@ export const Button: FC<IButton> = ({ children, onClick }) => {
     </Box>
   );
 };
+
+export default Button;

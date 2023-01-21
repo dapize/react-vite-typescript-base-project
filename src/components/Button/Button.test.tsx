@@ -1,17 +1,19 @@
 import { describe, expect, test, vi } from 'vitest';
-import { fireEvent, render, screen } from '@testing-library/react';
-import { Button } from './Button';
+import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import Button from './Button';
 
 describe('<Button/>', () => {
   test('Should Render', () => {
     render(<Button>Any Text</Button>);
-    expect(screen.getByText(/Any Text/i)).toBeDefined();
+    expect(screen.queryByText(/Any Text/i)).toBeInTheDocument();
   });
 
-  test('OnClick event', () => {
+  test('OnClick event', async () => {
     const click = vi.fn();
     render(<Button onClick={click}>Any Text</Button>);
-    fireEvent.click(screen.getByText(/Any Text/i));
+    const anyButton = screen.queryByText(/Any Text/i);
+    await userEvent.click(anyButton as HTMLElement);
     expect(click).toBeCalled();
   });
 });
