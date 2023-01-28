@@ -28,7 +28,13 @@
       "@utils":["utils"],
       "@utils/*":["utils/*"],
       "@services":["services"],
-      "@services/*":["services/*"]
+      "@services/*":["services/*"],
+      "@hooks":["hooks"],
+      "@hooks/*":["hooks/*"],
+      "@data":["data"],
+      "@data/*":["data/*"],
+      "@context":["context"],
+      "@context/*":["context/*"]
     }
   },
   "include": ["src"],
