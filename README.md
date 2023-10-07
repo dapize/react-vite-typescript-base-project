@@ -6,7 +6,7 @@
 
 # Projecto base para una APP con React JS + Material UI y Typescript
 
-Este repositorio contiene todo lo que necesitas para iniciar tu proyecto con React JS de forma más profesional, reune varias otras librerías para que puedas desarrollar tu APP facil y de forma rápida.
+Este repositorio contiene todo lo que necesitas para iniciar tu proyecto con React JS de forma más avanzada, reune varias otras librerías para un fácil y rápido desarrollo.
 
 ### Contenido
 
