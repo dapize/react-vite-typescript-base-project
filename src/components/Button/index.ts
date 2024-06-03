@@ -1,2 +1,2 @@
-export type { IButton } from './Button.d';
-export { default } from './Button';
+export { Button } from './Button';
+export type { ButtonProps } from './Button.d';

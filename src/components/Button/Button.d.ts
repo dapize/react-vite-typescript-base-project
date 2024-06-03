@@ -1,6 +1,5 @@
-import { ReactNode, MouseEventHandler } from 'react';
+import { PropsWithChildren } from 'react';
 
-export interface IButton {
-  children: ReactNode;
-  onClick?: MouseEventHandler<HTMLButtonElement>;
+export interface ButtonProps extends PropsWithChildren {
+  disabled?: boolean;
 }
